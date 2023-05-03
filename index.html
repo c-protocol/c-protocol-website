@@ -24,7 +24,7 @@
     <link href="/css/landing-page.css" rel="stylesheet">
 
     
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"> -->
 
     <style>
         .navbar {
@@ -55,6 +55,8 @@
 
         body {
             color: rgb(51, 51, 51);
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: lighter;
         }
 
         .header-container h1,
@@ -118,14 +120,14 @@
 		<div class="container header-container">
 
 			<div class="row">
-				<div class="col-md-4">&nbsp;</div>
+				<div class="col-md-2">&nbsp;</div>
 				
-				<div class="intro-message col-md-6">
-					<br />
-					<h1>Crayon Protocol</h1>
-					<h3>&nbsp;Leveraged trading and asset financing</h3>
+				<div class="intro-message col-md-8">
+					<br/>
+					<h1 style="text-align: center;">&nbsp;Crayon Protocol</h1>
+					<h5 style="text-align:right;">&nbsp;<i>(We're huge in France...)</i></h5>
 				</div>
-				<div class='col-md-12'>
+				<div class='col-md-2'>
 					&nbsp;
 				</div>
 			</div>
@@ -141,7 +143,6 @@
 
     <div class="content-section-a">
     
-
         <div class="container">
 
             <div class="row">
@@ -151,9 +152,9 @@
                     <h2 class="section-heading">Crayon Protocol at a glance</h2>
                     <p><strong>Lending</strong>. Traditional DeFi lending protocols have tended to favor new participants in the lending pool at the expense of existing ones. When a new deposit is made, both the interest rate paid by the borrower and the share of the current participants in the pool decrease. With Crayon Protocol, borrowers pay a fee up-front that is fully credited to current participants. Future lenders will be paid from fees on loans taken after they made their deposit. Crayon Protocol makes it possible for lenders to reserve funds for future withdrawal if current liquidity does not allow it.</p>
 
-                    <p><strong>Leveraged Trading</strong>. Traditional DeFi lending protocols expose borrowers to variable and unpredictable interest rates on their loans. PnL from certain leveraged trades can be highly dependent on the interest rate. In addition, the main DeFi lending protocols require multiple transactions, sometimes across multiple platforms, for a leveraged position to be created. With Crayon Protocol, a leveraged trade can be created for a fixed fee in a single transaction that borrows funds, buys the desired (approved) tokens, and deposits them in the pool as collateral. It's similar to a flashloan except that at the end of the transaction, instead of returning the borrowed funds, other tokens (from an approved list) can be deposited. Tokens deposited by borrowers are available for traditional flashloans allowing borrowers to earn additional fees.</p>
+                    <p><strong>Trade Leverage</strong>. Traditional DeFi lending protocols expose borrowers to variable and unpredictable interest rates on their loans. PnL from certain leveraged trades can be highly dependent on the interest rate. In addition, the main DeFi lending protocols require multiple transactions, sometimes across multiple platforms, for a leveraged position to be created. With Crayon Protocol, a leveraged trade can be created for a fixed fee in a single transaction that borrows funds, buys the desired (approved) tokens, and deposits them in the pool as collateral. It's similar to a flashloan except that at the end of the transaction, instead of returning the borrowed funds, other tokens (from an approved list) can be deposited. Tokens deposited by borrowers are available for traditional flashloans allowing borrowers to earn additional fees.</p>
 
-                    <p><strong>Asset Financing</strong>. Unlike leveraged trading, asset financing assumes the assets are already held by the borrower who wishes to obtain a loan. Crayon Protocol allows a more "repo-style" asset financing than traditional DeFi. Existing assets can be posted as collateral for a loan in some base token but, unlike traditional DeFi protocols, Crayon Protocol fixes the fee and the expiration date of the loan. This, again, allows for better cost predictions or PnL projections, depending on how the loan is used.</p>
+                    <p><strong>Asset Financing</strong>. Unlike trade leveraging, asset financing assumes the assets are already held by the borrower who wishes to obtain a loan. Crayon Protocol allows a more "repo-style" asset financing than traditional DeFi. Existing assets can be posted as collateral for a loan in some base token but, unlike traditional DeFi protocols, Crayon Protocol fixes the fee and the expiration date of the loan. This, again, allows for better cost predictions or PnL projections, depending on how the loan is used.</p>
 
                 </div>
             </div>
@@ -171,9 +172,9 @@
                     <h2 class="section-heading">How it works</h2>
                     
 
-                    <p>Crayon Protocol is implemented in a cluster of smart contracts at the center of which are the Control and XCRAY smart contracts. Lending, leveraged trading and asset financing is done through Desk's.</p>
+                    <p>Crayon Protocol is implemented in a cluster of smart contracts at the center of which are the Control and XCRAY smart contracts. Lending, trade leveraging and asset financing is done through Desk's.</p>
 
-                    <p><strong>Desks</strong>. Desks are the smart contracts that users interact with for lending and borrowing, be it for leveraged trading or asset financing. A Desk is characterized by:
+                    <p><strong>Desks</strong>. Desks are the smart contracts that users interact with for lending and borrowing, be it for trade leveraging or asset financing. A Desk is characterized by:
                         <ul>
                             <li>The base token: The ERC20 token that can be borrowed and serves as the numeraire for all prices.</li>
                             <li>The longable tokens: The ERC20 tokens that are accepted as collateral and therefore the tokens that users can finance or have leveraged positions in.</li>
@@ -198,7 +199,6 @@
 
     </div>
 
-    
     <div id="documentation" class="content-section-a">
     
 
@@ -208,11 +208,10 @@
                 <div>
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Documentation</h2>                    
+                    <h2 class="section-heading">Documentation</h2> 
 
                     <ul>
-                        <!-- TODO -->
-                        <li><a href="">Read The Docs</a></li>
+                        <li><a href="https://crayon-protocol.readthedocs.io/en/main/" style="color:rgb(0, 88, 139)">Read The Docs</a></li>
                     </ul>
 
                 </div>
@@ -246,15 +245,21 @@
 
 <footer>
     <div class="container">
-        <div class="col-md-2">
-            <div class="row">
-                <div class="col-md-6">
-                    <a href="https://github.com/c-protocol" target="_blank"><img src="/img/GitHub_Logo.png"  style="height:35px; width: 50px;"></a>   
-                </div>
-                <div class="col-md-6">
-                    <a href="https://mastodon.social/@cprotocol" target="_blank"><img src="/img/wordmark-black-text.png"  style="height:35px; width: 50px;"></a>   
-                </div>
-            </div>
+        <div style="display:table;align-self: center;margin-left: auto;margin-right: auto;">
+            <ul style="list-style-type:none;">
+                <li style="float:left; padding:20px; border-right: solid 1px; height: 50px">
+                    <a href="https://github.com/c-protocol" target="_blank" style="color:rgb(0, 88, 139)">Github</a>   
+                </li>
+                <li style="float:left; padding:20px; border-right: solid 1px; height: 50px">
+                    <a href="https://twitter.com/c_protocol76151" target="_blank" style="color:rgb(0, 88, 139)">Twitter</a>   
+                </li>
+                <li style="float:left; padding:20px; border-right: solid 1px; height: 50px">
+                    <a href="https://discord.gg/pSddUtHk" target="_blank" style="color:rgb(0, 88, 139)">Discord</a>   
+                </li>
+                <li style="float:left; padding:20px">
+                    <a href="https://mastodon.social/@cprotocol" target="_blank" style="color:rgb(0, 88, 139)">Mastodon</a>   
+                </li>
+            </ul>
         </div>
         <br><br><br><br>
         <!-- <div class="col-md-4"> -->
