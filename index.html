@@ -40,7 +40,7 @@
 
         .navbar a:link,
         .navbar-default .navbar-nav>li>a {
-            color: #777;
+            color: #555;
         }
 
         .navbar a:hover,
@@ -124,7 +124,7 @@
 				<div class="intro-message col-md-8">
 					<br/>
 					<h1 style="text-align: center;">&nbsp;Crayon Protocol</h1>
-					<h5 style="text-align:right;">&nbsp;<i>(We're huge in France...)</i></h5>
+					<h2 style="text-align:right;">&nbsp;<i>Leveraging made easy...</i></h5>
 				</div>
 				<div class='col-md-2'>
 					&nbsp;
@@ -151,9 +151,11 @@
                     <h2 class="section-heading">Crayon Protocol at a glance</h2>
                     <p><strong>Lending</strong>. Traditional DeFi lending protocols have tended to favor new participants in the lending pool at the expense of existing ones. When a new deposit is made, both the interest rate paid by the borrower and the share of the current participants in the pool decrease. With Crayon Protocol, borrowers pay a fee up-front that is fully credited to current participants. Future lenders will be paid from fees on loans taken after they made their deposit. Crayon Protocol makes it possible for lenders to reserve funds for future withdrawal if current liquidity does not allow it.</p>
 
-                    <p><strong>Trade Leverage</strong>. Traditional DeFi lending protocols expose borrowers to variable and unpredictable interest rates on their loans. PnL from certain leveraged trades can be highly dependent on the interest rate. In addition, the main DeFi lending protocols require multiple transactions, sometimes across multiple platforms, for a leveraged position to be created. With Crayon Protocol, a leveraged trade can be created for a fixed fee in a single transaction that borrows funds, buys the desired (approved) tokens, and deposits them in the pool as collateral. It's similar to a flashloan except that at the end of the transaction, instead of returning the borrowed funds, other tokens (from an approved list) can be deposited. Tokens deposited by borrowers are available for traditional flashloans allowing borrowers to earn additional fees.</p>
+                    <p><strong>One-step Trade Leveraging</strong>. Traditional DeFi lending protocols expose borrowers to variable and unpredictable interest rates on their loans. PnL from certain leveraged trades can be highly dependent on the interest rate. In addition, the main DeFi lending protocols require multiple transactions, sometimes across multiple platforms, for a leveraged position to be created. With Crayon Protocol, a leveraged trade can be created for a fixed fee in a single transaction that borrows funds, buys the desired (approved) tokens, and deposits them in the pool as collateral. It's similar to a flashloan except that at the end of the transaction, instead of returning the borrowed funds, other tokens (from an approved list) can be deposited. Tokens deposited by borrowers are available for traditional flashloans allowing borrowers to earn additional fees.</p>
 
-                    <p><strong>Asset Financing</strong>. Unlike trade leveraging, asset financing assumes the assets are already held by the borrower who wishes to obtain a loan. Crayon Protocol allows a more "repo-style" asset financing than traditional DeFi. Existing assets can be posted as collateral for a loan in some base token but, unlike traditional DeFi protocols, Crayon Protocol fixes the fee and the expiration date of the loan. This, again, allows for better cost predictions or PnL projections, depending on how the loan is used.</p>
+                    <p><strong>One-step Asset Financing</strong>. Unlike trade leveraging, asset financing assumes the assets are already held by the borrower who wishes to obtain a loan. Crayon Protocol allows a more "repo-style" asset financing than traditional DeFi. Existing assets can be posted as collateral for a loan in some base token but, unlike traditional DeFi protocols, Crayon Protocol fixes the fee and the expiration date of the loan. This, again, allows for better cost predictions or PnL projections, depending on how the loan is used. Crayon Protocol allows posting the collateral and borrowing against it in a single transaction.</p>
+
+                    <p><strong>Flashloans</strong>. Crayon Protocol supports traditional flashloans of the base token (the token available for lending) and the tokens posted as collateral. Fees from flashloans of the base token are paid to lenders; fees from flashloans of another token are paid to users who posted that token as collateral. Users can flashloan up to the full amount of their own deposit or their own collateral for no fee.</p>
 
                 </div>
             </div>
@@ -184,12 +186,18 @@
                             <li>The liquidation bonus: This is the discount applied when a liquidator is awarded collateral of the loan being liquidated.</li>
                         </ul>
                     </p>
-                    <p><strong>Control</strong>. The Control smart contract currently receives snapshots of the positions of all users in all Crayon Protocol desks. The snapshots are used to calculate the amount of reward (and future governance) tokens a user (lender or borrower) has earned from using the platform, across all desks. The Control smart contract will eventually become the governance protocol for the Crayon Protocol. 
+                    <p><strong>Control</strong>. The Control smart contract currently receives snapshots of the positions of all users in all Crayon Protocol desks. The snapshots are used to calculate the amount of reward tokens a user (lender or borrower) has earned from using the platform, across all desks. The Control smart contract also sets fees and reward distribution rates on the various desks.
                         <ul>
                             <li> Users invoke the minting function of the Control contract to acquire their earned XCRAY tokens.</li>
                         </ul>
                     </p>
-                    <p><strong>XCRAY</strong>. The (now) reward and (future) governance ERC20 token of the Crayon Protocol.</p>
+                    <p><strong>XCRAY</strong>. The (now) reward ERC20 token for lenders and borrowers and (future) governance token of the Crayon Protocol. Decentralized Crayon Protocol governance support is planned for 2023Q3 after which point holders of XCRAY will:
+                        <ul>
+                            <li>Decide the desks to deploy and their attributes.</li>
+                            <li>Manage the borrowing and flashloan fees and liquidation bonuses on various desks on an on-going basis.</li>
+                            <li>Manage the rates of distribution of XCRAY as rewards to lenders and borrowers on the various desks on an on-going basis.</li>
+                        </ul>
+                    </p>
 
                 </div>
             </div>
@@ -210,7 +218,7 @@
                     <h2 class="section-heading">Documentation</h2> 
 
                     <ul>
-                        <li><a href="https://crayon-protocol.readthedocs.io/en/main/" style="color:rgb(0, 88, 139)">Read The Docs</a></li>
+                        <li><a href="https://crayon-protocol.readthedocs.io/en/main/" style="color:rgb(0, 88, 139)">Read the docs</a>.</li>
                     </ul>
 
                 </div>
