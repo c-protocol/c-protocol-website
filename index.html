@@ -155,7 +155,7 @@
 
                     <p><strong>One-step Asset Financing</strong>. Unlike trade leveraging, asset financing assumes the assets are already held by the borrower who wishes to obtain a loan. Crayon Protocol allows a more "repo-style" asset financing than traditional DeFi. Existing assets can be posted as collateral for a loan in some base token but, unlike traditional DeFi protocols, Crayon Protocol fixes the fee and the expiration date of the loan. This, again, allows for better cost predictions or PnL projections, depending on how the loan is used. Crayon Protocol allows posting the collateral and borrowing against it in a single transaction.</p>
 
-                    <p><strong>Flashloans</strong>. Crayon Protocol supports traditional flashloans of the base token (the token available for lending) and the tokens posted as collateral. Fees from flashloans of the base token are paid to lenders; fees from flashloans of another token are paid to users who posted that token as collateral. Users can flashloan up to the full amount of their own deposit or their own collateral for no fee.</p>
+                    <p><strong>Flashloans</strong>. Crayon Protocol supports traditional flashloans of the base token (the token available for lending) and the tokens posted as collateral. Fees from flashloans of the base token are paid to lenders; fees from flashloans of another token are paid to users who posted that token as collateral. Smart contracts can flashloan up to the full amount of their own deposit or their own collateral for no fee.</p>
 
                 </div>
             </div>
@@ -181,7 +181,7 @@
                             <li>The longable tokens: The ERC20 tokens that are accepted as collateral and therefore the tokens that users can finance or have leveraged positions in.</li>
                             <li>The horizons: The lenghts in number of blocks that users can have loans for. At expiration, users can extend or repay the loan. A horizon of 5760 is roughly a day.</li>
                             <li>The loan fees: Different borrowing fees apply to the different horizons.</li>
-                            <li>Flashloan fees: One flashloan fee applies to borrowing any of the longable tokens as well as the base token. Note that a user can flashloan its own collateral or base token deposit for no fee.</li>
+                            <li>Flashloan fees: One flashloan fee applies to borrowing any of the longable tokens as well as the base token. Note that a smart contract can flashloan its own collateral or base token deposit for no fee.</li>
                             <li>The value to loan threshold: The minimum acceptable ratio for the value of the collateral to the amount of the loan. If the ratio drops below the threshold, then the loan is subject to liquidation.</li>
                             <li>The liquidation bonus: This is the discount applied when a liquidator is awarded collateral of the loan being liquidated.</li>
                         </ul>
